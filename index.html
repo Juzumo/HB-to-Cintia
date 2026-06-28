@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>立体生日贺卡</title>
+    <link rel="stylesheet" href="./birthday-card.css" />
+  </head>
+  <body>
+    <main class="scene" aria-label="生日电子贺卡">
+      <section class="card" id="card" aria-expanded="false">
+        <div class="page page--right" aria-label="右侧内页">
+          <div class="page-stars" id="rightStars" aria-label="右页星星"></div>
+        </div>
+
+        <div class="cover" id="openCard" role="button" tabindex="0" aria-label="播放生日歌并翻开贺卡封面">
+          <span class="fold-line" aria-hidden="true"></span>
+          <div class="cover-face cover-front" aria-hidden="true">
+            <span class="cake-mark">
+              <span class="cake-plate"></span>
+              <span class="cake-base"></span>
+              <span class="cake-icing"></span>
+              <span class="cake-layer"></span>
+              <span class="candle candle--one"><b></b></span>
+              <span class="candle candle--two"><b></b></span>
+              <span class="candle candle--three"><b></b></span>
+            </span>
+          </div>
+          <div class="cover-face cover-back">
+            <span class="page-stars" id="leftStars" aria-label="左页星星"></span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="message-layer" id="messageLayer" aria-hidden="true">
+      <article class="message-card">
+        <p id="messageText"></p>
+      </article>
+    </div>
+
+    <script src="./birthday-card.js"></script>
+  </body>
+</html>
